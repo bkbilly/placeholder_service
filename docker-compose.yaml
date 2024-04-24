@@ -1,0 +1,6 @@
+services:
+  placeholder_service:
+    image: bkbilly/placeholder_service
+    restart: unless-stopped
+    ports:
+      - 9845:9845
