@@ -1,0 +1,16 @@
+name: "Placeholder Service"
+version: "0.4"
+slug: "placeholder_service"
+description: "Create images from text input received through HTTP requests"
+url: https://github.com/bkbilly/placeholder_service
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+startup: services
+ports:
+  9845/tcp: 9845
+image: "bkbillybk/placeholder_service"

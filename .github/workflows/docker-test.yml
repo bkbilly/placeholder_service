@@ -1,13 +1,11 @@
-name: Docker Publish
+name: Docker Test
 
 # This workflow uses actions that are not certified by GitHub.
 # They are provided by a third-party and are governed by
 # separate terms of service, privacy policy, and support
 # documentation.
 
-on:
-  release:
-    types: [published]
+on: [push, pull_request]
 
 env:
   # Use docker.io for Docker Hub if empty
@@ -62,6 +60,6 @@ jobs:
         with:
           context: placeholder_service
           platforms: linux/amd64,linux/arm64/v8,linux/arm/v7,linux/arm64,linux/386
-          push: true
+          push: false
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
