@@ -1,5 +1,5 @@
 name: "Placeholder Service"
-version: "2024.4.0"
+version: "0.1"
 slug: "placeholder_service"
 description: "Create images from text input received through HTTP requests"
 url: https://github.com/bkbilly/placeholder_service
