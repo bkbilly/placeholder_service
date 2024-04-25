@@ -3,8 +3,8 @@ FROM $BUILD_FROM
 
 
 # Python 3 HTTP Server serves the current working dir
-# So let's set it to our add-on persistent data directory.
-WORKDIR /data
+# So let's set it to our add-on persistent app directory.
+WORKDIR /app
 
 # Copy data for add-on
 COPY requirements.txt .
