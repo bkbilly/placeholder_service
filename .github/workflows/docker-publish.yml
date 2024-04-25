@@ -62,6 +62,6 @@ jobs:
         with:
           context: placeholder_service
           platforms: linux/amd64,linux/arm64/v8,linux/arm/v7,linux/arm64,linux/386
-          push: false
+          push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
