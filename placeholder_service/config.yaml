@@ -13,4 +13,4 @@ init: false
 startup: services
 ports:
   9845/tcp: 9845
-image: "bkbillybk/{arch}-placeholder_service"
+image: "bkbillybk/placeholder_service:{arch}"
