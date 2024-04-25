@@ -1,4 +1,4 @@
 #!/bin/sh
 
 echo "Hello world!"
-python3 /app/placeholder_service.py
+python3 /data/placeholder_service.py
