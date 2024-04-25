@@ -9,6 +9,8 @@ WORKDIR /data
 # Copy data for add-on
 COPY requirements.txt .
 COPY placeholder_service.py .
+COPY run.sh /
+RUN chmod a+x /run.sh
 
 # Install requirements for add-on
 RUN apk add --no-cache python3
@@ -19,4 +21,4 @@ RUN pip install Pillow
 RUN apk del build-deps
 
 
-CMD ["python3", "placeholder_service.py"]
+CMD [ "/run.sh" ]
